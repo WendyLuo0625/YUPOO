@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+{% for title in title_list %}
+    <p>{{ title }} </p>
+{% endfor %}
+=======
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+  </head>
+  <body>
+    <ul>
+     {% for file in files %}
+     <li><a href="{{ url_for('file', file_id=file.id) }}" target="_blank">{{ file.title }}</a></li>
+     {% endfor %}
+    </ul>
+  </body>
+</html>
+>>>>>>> 65aaae05cf557d0ca1f8ac95241af88ab4b65c05
